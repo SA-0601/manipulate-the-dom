@@ -89,8 +89,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   blogPost.forEach(element => {
     element.addEventListener('mouseout',function(){
       element.classList.toggle('purple');
+      element.classList.toggle('red');
     })
     element.addEventListener('mouseenter',function(){
+      element.classList.toggle('purple');
       element.classList.toggle('red');
     })
   });
